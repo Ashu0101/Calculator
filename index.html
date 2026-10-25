@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10131c">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="calculator" aria-label="Calculator">
+    <header class="header">
+      <h1>Calculator</h1>
+      <span class="hint">Keyboard supported</span>
+    </header>
+    <section class="screen" aria-live="polite" aria-atomic="true">
+      <div class="expression" id="expression" aria-label="Expression"></div>
+      <div class="result" id="result" aria-label="Result">0</div>
+    </section>
+    <section class="keys" aria-label="Calculator keys">
+      <button class="function" data-action="clear" aria-label="Clear all">AC</button>
+      <button class="function" data-value="(" aria-label="Open parenthesis">(</button>
+      <button class="function" data-value=")" aria-label="Close parenthesis">)</button>
+      <button class="operator" data-value="/" aria-label="Divide">÷</button>
+
+      <button class="function" data-action="sqrt" aria-label="Square root">√</button>
+      <button class="function" data-action="square" aria-label="Square">x²</button>
+      <button class="function" data-value="^" aria-label="Power">xʸ</button>
+      <button class="operator" data-value="*" aria-label="Multiply">×</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button class="operator" data-value="-" aria-label="Subtract">−</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button class="operator" data-value="+" aria-label="Add">+</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button class="function" data-value="%" aria-label="Modulo">mod</button>
+
+      <button class="function" data-action="sign" aria-label="Change sign">±</button>
+      <button data-value="0">0</button>
+      <button data-value=".">.</button>
+      <button class="equals" data-action="equals" aria-label="Calculate">=</button>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
